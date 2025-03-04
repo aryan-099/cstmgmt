@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workers Management</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="workers.html">Workers</a></li>
+            <li><a href="cost.html">Cost</a></li>
+            <li><a href="salary.html">Salary</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Workers Management</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Hourly Rate</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>Foreman</td>
+                <td>10 years</td>
+                <td>$35</td>
+                <td>555-123-4567</td>
+            </tr>
+            <tr>
+                <td>Maria Garcia</td>
+                <td>Electrician</td>
+                <td>8 years</td>
+                <td>$32</td>
+                <td>555-234-5678</td>
+            </tr>
+            <tr>
+                <td>Robert Johnson</td>
+                <td>Carpenter</td>
+                <td>5 years</td>
+                <td>$28</td>
+                <td>555-345-6789</td>
+            </tr>
+            <tr>
+                <td>Sarah Lee</td>
+                <td>Plumber</td>
+                <td>7 years</td>
+                <td>$30</td>
+                <td>555-456-7890</td>
+            </tr>
+        </table>
+        
+        <div class="form-container">
+            <h2>Add New Worker</h2>
+            <form id="worker-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <input type="text" id="role" name="role" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience:</label>
+                    <input type="text" id="experience" name="experience" required>
+                </div>
+                <div class="form-group">
+                    <label for="rate">Hourly Rate ($):</label>
+                    <input type="number" id="rate" name="rate" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+                <button type="submit" class="btn">Add Worker</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/workers.js"></script>
+</body>
+</html>
